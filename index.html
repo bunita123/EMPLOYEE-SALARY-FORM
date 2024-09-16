@@ -1,94 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .signup-container {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      text-align: center;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 24px;
-      color: #333;
-    }
-
-    .input-group {
-      margin-bottom: 15px;
-      text-align: left;
-    }
-
-    .input-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #333;
-    }
-
-    .input-group input {
-      width: 100%;
-      padding: 8px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
-
-    button {
-      background-color: #5cb85c;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    button:hover {
-      background-color: #4cae4c;
-    }
-
-    #statusMessage {
-      margin-top: 20px;
-      font-size: 14px;
-      color: red;
-    }
-  </style>
-</head>
-<body>
-  <div class="signup-container">
-    <h2>Signup Form</h2>
-    <form id="signupForm" action="/submit" method="POST">
-      <div class="input-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      
-      <div class="input-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Sign Up</button>
-    </form>
-    <div id="statusMessage"></div>
-  </div>
-</body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+    <title>Employee Salary Form</title> 
+</head> 
+<body><center> 
+    <h2>Employee Salary Form</h2> 
+    <form  action="/submit" method="post"> 
+        <label for="name">Employee Name:</label><br> 
+        <input type="text" id="name" name="name" required><br><br> 
+ 
+        <label for="id">Employee ID:</label><br> 
+        <input type="text" id="id" name="id" required><br><br> 
+ 
+        <label for="designation">Employee Designation:</label><br>         
+      <input type="text" id="designation" name="designation" required><br><br> 
+ 
+        <label for="salary">Employee Salary:</label><br>         
+      <input type="number" id="salary" name="salary" required><br><br>  
+        <input type="submit" value="Submit"> 
+     
+    </form> 
+</body> 
+</center> 
+</html> 
